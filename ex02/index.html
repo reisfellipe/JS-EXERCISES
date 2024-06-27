@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #33304b;
+            color: blueviolet;
+            font-family: 'Times New Roman', Times, serif;
+}
+    </style>
     <title>Problema 2</title>
 </head>
 <body>
@@ -11,9 +18,17 @@
 
     <script>
 
-        const nome = prompt('Tell us your name');
-        alert(`Seja bem vindo ${nome}!`);
+        //pedir para o usuario digitar um numero
+        const n1 = Number(prompt('Type a number'));
 
+        //pedir para o usuario digitar outro numero
+        const n2 = Number(prompt('Type another one'));
+
+        //criando uma funcção que faz a soma de dois valores numbers
+        const soma = (x,y) => x + y;
+
+        //mostrar a soma
+        alert(soma(n1,n2));
         
 
     </script>

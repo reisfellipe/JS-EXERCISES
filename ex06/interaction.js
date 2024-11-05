@@ -28,7 +28,7 @@ function lampOnOff(){
     if (turnOnOff.textContent == 'Ligar') {
         lampOn();
         turnOnOff.textContent = 'Desligar';
-    }else{
+    } else{
         lampOff();
         turnOnOff.textContent = 'Ligar';
     }
@@ -36,7 +36,6 @@ function lampOnOff(){
 }
 
 turnOnOff.addEventListener('click', lampOnOff);
-
 lamp.addEventListener('mouseover', lampOn);
 lamp.addEventListener('mouseleave', lampOff);
 lamp.addEventListener('dblclick', lampBroken);

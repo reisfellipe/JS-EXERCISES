@@ -1,16 +1,14 @@
 /*
     EXERCÍCIO PRÁTICO;
-    -Pedir para o usuario digitar um numero
-    -Converter em numero inteiro
-    -Pedir ao usuário que digite outro numero
-    -converter em numero inteiro
-
-    -> Mostrar a subtração concatenando com o texto "a subtração é:..."
-    
-    -> Mostrar a multiplicação concatenando com o texto "a multiplicação é:..."
-
-    -Mostrar a divisão concatenando com o texto "a divisão é:.."
-
-    -Mostrar a soma concatenando com o texto "a soma é:..."
+    -Pedir ao usuario que digite dois numeros diferentes, e depois passar um valor médio
 */
+
+let n1 = Number(prompt("Digite a primeira nota:"));
+let n2 = Number(prompt("Qual a segunda nota?"));
+
+const notaMedia = (x,y) => {
+    return (x + y) / 2;
+}
+
+alert(`A sua média no bimestre foi de: ${notaMedia(n1,n2)}`);
 

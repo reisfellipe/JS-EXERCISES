@@ -1,23 +1,37 @@
 /*
     EXERCÍCIO PRÁTICO;
-    - Pedir para o usuario digitar um numero
-    - converter para numero real
-    - Pedir para o usuario digitar outro numero
-    - Converter em numero real
+    - Fazer jogador1 digitar um numero
+    - fazer jogador2 digitar outro numero
+    - SE forem iguais, mostrar mensagem "empate"
+    - Sortear um numero entre 0 e 1
 
-    - Calcular os dois valores, e exibir a média.
-    - Mostrar um boolean indicando se a media for maior que 5
+    - SE o numero sorteado for 0, ganha quem escolher o numero MENOR
+    -SE o numero sorteado for 1, ganha quem escolher o numero MAIOR
 
 */
 
-let n1 = parseFloat(prompt('Primeira nota:'));
-let n2 = parseFloat(prompt('A segunda nota:'));
-const media = (n1 + n2) / 2;
+let numeroJogador1 = parseInt(prompt("Escolha um numero:"));
+let numeroJogador2 = parseInt(prompt('Escolha um numero'));
 
-// alert(media > 5)
+if(numeroJogador1 == numeroJogador2){
+    alert('EMPATE!');
+};
 
-if(media > 5){
-    alert('Acima da média ' + media);
-}else{
-    alert('Abaixo da média ' + media);
+const random = parseInt( Math.random() * 2 )
+alert(`o numero sorteado é ${random}`)
+
+if(random == 0){
+    if(numeroJogador1 < numeroJogador2 ){
+        alert("Jogador 1 Venceu! Pois escolheu o numero menor: " +  numeroJogador1);
+    }else{
+        alert("Jogador 2 Venceu! Pois escolheu o numero menor: " + numeroJogador2)
+    }
+}
+
+if(random == 1){
+    if(numeroJogador1 > numeroJogador2 ){
+        alert("Jogador 1 Venceu! Pois escolheu o numero maior:  " + numeroJogador1);
+    }else{
+        alert("Jogador 2 Venceu! Pois escolheu o numero maior: " + numeroJogador2)
+    }
 }

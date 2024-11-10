@@ -10,27 +10,27 @@
 
 */
 
-let numeroJogador1 = parseInt(prompt("Escolha um numero:"));
-let numeroJogador2 = parseInt(prompt('Escolha um numero'));
+let numeroJogador1 = parseInt(prompt("Primeiro Jogador, escolha um numero:"));
+let numeroJogador2 = parseInt(prompt('Segundo Jogador, escolha um numero'));
 const random = parseInt( Math.random() * 2 )
 
 if(numeroJogador1 == numeroJogador2){
-    alert('EMPATE!');
+    alert('EMPATE! Pois os dois jogadores escolheram os mesmos números');
 }else{    
     alert(`o numero sorteado é ${random}`)
     if(random == 0){
         if(numeroJogador1 < numeroJogador2 ){
-            alert("Jogador 1 Venceu! Pois escolheu o numero menor: " +  numeroJogador1);
+            alert("BERNARDO VENCEU! Pois escolheu o numero menor: " +  numeroJogador1);
         }else{
-            alert("Jogador 2 Venceu! Pois escolheu o numero menor: " + numeroJogador2)
-        }
+            alert("FELLIPE VENCEU! Pois escolheu o numero menor: " + numeroJogador2)
+        } 
     }
     
     if(random == 1){
         if(numeroJogador1 > numeroJogador2 ){
-            alert("Jogador 1 Venceu! Pois escolheu o numero maior:  " + numeroJogador1);
+            alert("BERNARDO VENCEU! Pois escolheu o numero maior:  " + numeroJogador1);
         }else{
-            alert("Jogador 2 Venceu! Pois escolheu o numero maior: " + numeroJogador2)
+            alert("FELLIPE VENCEU! Pois escolheu o numero maior: " + numeroJogador2)
         }
     }
 }

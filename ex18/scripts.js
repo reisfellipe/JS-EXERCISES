@@ -1,25 +1,28 @@
 /*
     EXERCÍCIO PRÁTICO;
-    Mostrando números impares, utilizando loops de repetição
+    Mostrando números pares, utilizando loops de repetição
 
 */
 
-function validarImpares(){
-    
-    let numerosImpares = [];
-    
-    for (let i = 0; numerosImpares.length < 10; i++) {
-        
-        let numeroDigitado =  Number(prompt("Digite algum numero:"));
+function validarPares(){
 
+    const numerosPares = [];
+
+    for (let i = 1; numerosPares.length < 5; i++ ) {
+
+        let numeroDigitado = Number(prompt("Digite algum numero"));
+        
         if(numeroDigitado % 2 !== 0){
-            numerosImpares.push(numeroDigitado);
-        } else{
-            console.log(`O ${numeroDigitado} não é ímpar, tente novamente.`);
+            numerosPares.push(numeroDigitado);
+        } else {
+            alert("Número não é impar, tente novamente");
         }
     }
 
-    console.log(numerosImpares)
+    document.write(numerosPares);
+    console.log(numerosPares)
+
+
 }
 
-validarImpares();
+validarPares();

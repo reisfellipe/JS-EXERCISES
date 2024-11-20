@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background: rgb(255,254,255);
+            background: radial-gradient( circle, rgb(191, 113, 191) 0%, rgb(40, 42, 102) 100%);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            
+        }
+
+        span {
+            background-color: yellow;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        div{
+            color: white;
+        }
+
+        button {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            text-transform: uppercase;
+            margin: 0 10px;
+        }
+
+        button:first-of-type{
+            background-color: lightblue;
+        }
+
+        button:last-of-type{
+            background-color: orange;
+        }
+
+        
+
+    </style>
+    <title>Praticando lógica com JS</title>
+</head>
+<body>
+    
+    <h1>Confira a exibição das interações do <span>JavaScript</span></h1>
+
+    <div id="output">
+
+        <button onclick="mostrarTabuada()">Gerar tabuada</button>
+        <button onclick="limparTabuada()">Limpar</button>
+
+
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

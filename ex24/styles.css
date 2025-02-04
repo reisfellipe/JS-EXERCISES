@@ -1,0 +1,27 @@
+#numero {
+    font-size: 18px;
+}
+
+.ok {
+    color: rgb(49, 184, 49);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.erro {
+    color: rgb(218, 78, 54);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+body {
+    background-color: #222;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
